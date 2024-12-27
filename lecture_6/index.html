@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to DOM</title>
+
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Introduction to Document Object Model</h1>
+
+    <p class="paragraph">Paragraph 1</p>
+    <p class="paragraph">Paragraph 2</p>
+    <p class="paragraph">Paragraph 3</p>
+
+    <div id="container"></div>
+
+    <script>
+      // Accessing Elements
+      const title = document.getElementById("title")
+      //   console.log(title)
+
+      const paragraphElements = document.getElementsByClassName("paragraph")
+      //   console.log(paragraphElements[]) // returns HTMLCollection
+      //   paragraphElements.forEach((el) => console.log(el)) // this will not work because it's HTMLCollection
+
+      const paragraphsArray = Array.from(paragraphElements)
+      //   console.log(paragraphsArray)
+
+      //   paragraphsArray.forEach((p) => console.log(p))
+
+      const elementsByTag = document.getElementsByTagName("p")
+      // console.log(elementsByTag) // return HTMLCollection
+
+      const elements = document.querySelectorAll(".paragraph")
+      //   console.log(elements)
+      // elements.forEach((el) => console.log(el))
+
+      const titleElement = document.querySelector("#title")
+      // console.log(titleElement)
+
+      // Styling Elements
+
+      // one way of styling elements
+      const thirdParagraphElement = paragraphElements[2]
+      thirdParagraphElement.style.color = "red"
+      thirdParagraphElement.style.fontSize = "30px"
+
+      // second way of styling elements
+      titleElement.style.cssText =
+        "color: blue; font-size: 36px; margin-left: 100px; font-weight: 100; background-color: yellow"
+
+      // Creating DOM Nodes
+      const newTitle = document.createElement("h2")
+
+      newTitle.textContent = "This is a new title"
+      newTitle.setAttribute("id", "new-title")
+      const body = document.querySelector("body")
+      document.body.appendChild(newTitle)
+
+      // Adding element to a specific element
+      const container = document.getElementById("container")
+      const newDivElement = document.createElement("div")
+      container.appendChild(newDivElement)
+
+      const imageElement = document.createElement("img")
+      imageElement.setAttribute("alt", "cute dog")
+      imageElement.setAttribute(
+        "src",
+        "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_square.jpg"
+      )
+      imageElement.style.height = "150px"
+      imageElement.style.width = "150px"
+      container.insertBefore(imageElement, newDivElement)
+
+      // classList
+
+      // adds one or more classes
+      newDivElement.classList.add("box", "blue")
+
+      // remove class
+      //   newDivElement.classList.remove("blue")
+    </script>
+  </body>
+</html>
