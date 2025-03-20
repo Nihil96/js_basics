@@ -1,6 +1,6 @@
 # Starting with JavaScript
 
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png "JavaScript Logo")
+![Alt Text](https://www.datocms-assets.com/48401/1627664298-javascript.png?fit=max&w=900 "JavaScript Logo")
 
 ## First of all, what exactly is programming?
 
