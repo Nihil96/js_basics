@@ -1,6 +1,6 @@
 # Starting with JavaScript
 
-![Alt Text](https://www.infragistics.com/community/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-08-70/dev_2D00_tools_2D00_ignite_2D00_ui_2D00_javascript_2D00_2.jpg "JavaScript Logo")
+![Alt Text](https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png "JavaScript Logo")
 
 ## First of all, what exactly is programming?
 
