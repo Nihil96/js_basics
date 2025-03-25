@@ -35,6 +35,8 @@ After every lecture, there will be a homework assignment to complete. Please fol
 4. This structured approach helps you organize your assignments and makes it easier for me to review your work.
 5. Submission: Once you complete the homework, please send me the link to your repository via email at: kostadinoskihristijan@gmail.com.
 
+**Note:** The homework should be submitted no later than one week.
+
 ## How to Contribute
 
 If you find any issues, typos, or have suggestions for improvement, please feel free to open an issue or submit a pull request.
